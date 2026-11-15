@@ -17,8 +17,8 @@ alias zshconf='code ~/.zshrc'
 
 # file utilities
 alias ls='eza'
-alias lsl='eza -l'
-alias lsa='eza -a'
-alias lsla='eza -la'
-alias lst='eza --tree'
+alias ll='eza -l'
+alias la='eza -a'
+alias lla='eza -la'
+alias lt='eza --tree'
 alias cat='bat'
