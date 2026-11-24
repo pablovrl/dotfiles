@@ -16,6 +16,19 @@ Reload the configuration:
 source ~/.zshrc
 ```
 
+These aliases also work in Bash (Omarchy's default shell). Add this after
+Omarchy's default configuration in `~/.bashrc`:
+
+```bash
+if [[ -r "$HOME/Work/dotfiles/zsh/aliases.zsh" ]]; then
+  source "$HOME/Work/dotfiles/zsh/aliases.zsh"
+fi
+```
+
+Open a new terminal or run `source ~/.bashrc` to load them. Shared aliases
+override any defaults with the same name. The `zshconf` alias still edits
+`~/.zshrc`; it is intended for Zsh users.
+
 ## Kitty
 
 The configuration in `kitty/kitty.conf` contains the active settings from the

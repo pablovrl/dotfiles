@@ -2,7 +2,7 @@
 alias gsw='git switch'
 alias gb='git branch --show-current'
 alias gcp='git cherry-pick'
-alias gst='git stash'
+alias gsta='git stash'
 alias gstp='git stash pop'
 alias gmsq='git merge --squash'
 alias gpr='git pull --rebase'
