@@ -1,3 +1,5 @@
+# Shared aliases for Bash and Zsh.
+
 # git
 alias gsw='git switch'
 alias gb='git branch --show-current'

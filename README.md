@@ -2,12 +2,12 @@
 
 Shared configuration for macOS and Linux.
 
-## Zsh aliases
+## Shared shell aliases (Bash and Zsh)
 
 Add this line to `~/.zshrc`, adjusting the path if you clone the repository elsewhere:
 
 ```zsh
-source ~/work/dotfiles/zsh/aliases.zsh
+source ~/work/dotfiles/shell/aliases.sh
 ```
 
 Reload the configuration:
@@ -20,8 +20,8 @@ These aliases also work in Bash (Omarchy's default shell). Add this after
 Omarchy's default configuration in `~/.bashrc`:
 
 ```bash
-if [[ -r "$HOME/Work/dotfiles/zsh/aliases.zsh" ]]; then
-  source "$HOME/Work/dotfiles/zsh/aliases.zsh"
+if [[ -r "$HOME/Work/dotfiles/shell/aliases.sh" ]]; then
+  source "$HOME/Work/dotfiles/shell/aliases.sh"
 fi
 ```
 
