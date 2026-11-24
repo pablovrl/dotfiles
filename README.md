@@ -29,6 +29,26 @@ Open a new terminal or run `source ~/.bashrc` to load them. Shared aliases
 override any defaults with the same name. The `zshconf` alias still edits
 `~/.zshrc`; it is intended for Zsh users.
 
+## VS Code settings
+
+`vscode/settings.json` contains shared user settings only (no keybindings,
+snippets, or extension list). Link it from the repository root:
+
+```sh
+# Linux:
+target="$HOME/.config/Code/User/settings.json"
+# On macOS, use instead:
+# target="$HOME/Library/Application Support/Code/User/settings.json"
+mkdir -p "$(dirname "$target")"
+if [ -e "$target" ] || [ -L "$target" ]; then
+    mv "$target" "$target.backup-$(date +%Y%m%d%H%M%S)"
+fi
+ln -s "$PWD/vscode/settings.json" "$target"
+```
+
+VS Code reads the settings directly from the repository. Changes made through
+VS Code's settings editor also update the tracked file.
+
 ## Kitty
 
 The configuration in `kitty/kitty.conf` contains the active settings from the
